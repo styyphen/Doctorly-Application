@@ -46,4 +46,24 @@ public class Query
     [UseProjection]
     public MedicalRecord? GetMedicalRecord(HealthAppDbContext context, Guid id) =>
         context.MedicalRecords.FirstOrDefault(m => m.Id == id);
+
+    [UseProjection]
+    [UseFiltering]
+    [UseSorting]
+    public IQueryable<Event> GetEvents(HealthAppDbContext context) =>
+        context.Events;
+
+    [UseProjection]
+    public Event? GetEvent(HealthAppDbContext context, Guid id) =>
+        context.Events.FirstOrDefault(e => e.Id == id);
+
+    [UseProjection]
+    [UseFiltering]
+    [UseSorting]
+    public IQueryable<Attendee> GetAttendees(HealthAppDbContext context) =>
+        context.Attendees;
+
+    [UseProjection]
+    public Attendee? GetAttendee(HealthAppDbContext context, Guid id) =>
+        context.Attendees.FirstOrDefault(a => a.Id == id);
 }

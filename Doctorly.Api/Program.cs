@@ -6,6 +6,7 @@ using HealthApp.Application.Services;
 using HealthApp.Infrastructure.Services;
 using HealthApp.Infrastructure.Configuration;
 using Doctorly.Api.GraphQL;
+using Doctorly.Api.GraphQL.Mutations;
 using HotChocolate.Data;
 using HotChocolate.AspNetCore;
 using ChilliCream.Nitro.App;
