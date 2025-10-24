@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);1591;1701;1702;CS7035;CS0618;NU5100;NU1701;NU1608;NU1603;NU1903;SYSLIB0021;CA1416;NETSDK1206</NoWarn>
+    <SuppressNETSdkWarning>NETSDK1206</SuppressNETSdkWarning>
+  </PropertyGroup>
+</Project>
